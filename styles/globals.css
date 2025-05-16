@@ -1,0 +1,12 @@
+/* styles/globals.css  ─ styles valables pour tout le site */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
