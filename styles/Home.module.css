@@ -1,6 +1,4 @@
-
-/* SCROLL + BASE */
-
+/* styles/Home.module.css – classes locales au composant */
 
 .container { width: 100%; }
 
@@ -24,135 +22,87 @@
   z-index: 0;
 }
 
-.overlay {
-  z-index: 1;
-  padding: 0 20px;
-}
+.overlay { z-index: 1; padding: 0 20px; }
 
-.title {
-  font-size: 3.2em;
-  animation: fadeUp 1s ease-out;
-}
-
-.subtitle {
-  font-size: 1.3em;
-  color: #e2d3dd;
-  animation: fadeUp 1.3s ease-out;
-}
+.title   { font-size: 3.2em; animation: fadeUp 1s ease-out; }
+.subtitle{ font-size: 1.3em; color:#e2d3dd; animation: fadeUp 1.3s ease-out;}
 
 .button {
   margin-top: 20px;
   padding: 14px 32px;
-  background: #e899b8;
-  color: white;
-  border-radius: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  display: inline-block;
+  background:#e899b8;
+  color:#fff;
+  border-radius:30px;
+  font-weight:bold;
+  text-decoration:none;
+  display:inline-block;
   animation: fadeUp 1.5s ease-out;
-  transition: transform 0.3s ease;
+  transition:transform .3s ease;
 }
-
-.button:hover { transform: scale(1.05); background: #d07aa1; }
+.button:hover { transform:scale(1.05); background:#d07aa1; }
 
 /* SECTIONS */
-.section {
-  padding: 60px 20px;
-  background: #111;
-  animation: fadeIn 1.5s ease;
-}
+.section { padding:60px 20px; background:#111; animation:fadeIn 1.5s ease; }
+.section h2 { color:#f8c5dc; margin-bottom:30px; font-size:2.2em; }
 
-.section h2 {
-  color: #f8c5dc;
-  margin-bottom: 30px;
-  font-size: 2.2em;
-}
-
-/* GRID SYSTEM */
+/* GRID */
 .grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: center;
+  display:flex;
+  flex-wrap:wrap;
+  gap:30px;
+  justify-content:center;
 }
-
 .card {
-  background: #1e1e1e;
-  padding: 25px;
-  border-radius: 16px;
-  width: 260px;
-  text-align: center;
-  transition: transform 0.3s ease;
+  background:#1e1e1e;
+  padding:25px;
+  border-radius:16px;
+  width:260px;
+  text-align:center;
+  transition:transform .3s ease;
 }
-
-.card:hover { transform: translateY(-8px); }
-
-.card h3 { color: #f6accf; }
-
-.card p { color: #ccc; font-size: 1em; }
+.card:hover { transform:translateY(-8px); }
+.card h3 { color:#f6accf; }
+.card p  { color:#ccc; }
 
 /* GALLERY */
 .galleryImg {
-  width: 260px;
-  border-radius: 12px;
-  transition: all 0.4s ease-in-out;
+  width:260px;
+  border-radius:12px;
+  transition:all .4s ease-in-out;
 }
+.galleryImg:hover { transform:scale(1.05); }
 
-.galleryImg:hover { transform: scale(1.05); }
-
-/* FORMULAIRE */
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
+/* FORM */
+.form { display:flex; flex-direction:column; align-items:center; gap:15px; }
+.form input,.form textarea{
+  width:90%; max-width:400px; padding:12px;
+  border:none; border-radius:8px; font-family:'Playfair Display',serif;
 }
-
-.form input, .form textarea {
-  width: 90%;
-  max-width: 400px;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  font-family: 'Playfair Display', serif;
+.form button{
+  padding:12px 30px; background:#e899b8; color:#fff;
+  border:none; border-radius:30px; font-weight:bold; cursor:pointer;
+  transition:background .3s ease;
 }
-
-.form button {
-  padding: 12px 30px;
-  background: #e899b8;
-  color: white;
-  border: none;
-  border-radius: 30px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.form button:hover { background: #d07aa1; }
+.form button:hover{ background:#d07aa1; }
 
 /* FOOTER */
-.footer {
-  padding: 40px 20px;
-  background: #000;
-  text-align: center;
-  font-size: 0.9em;
-  color: #888;
+.footer{
+  padding:40px 20px; background:#000;
+  text-align:center; font-size:.9em; color:#888;
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .title { font-size: 2em; }
-  .subtitle { font-size: 1em; }
-  .grid, .galleryImg, .card { width: 90%; flex-direction: column; }
+@media (max-width:768px){
+  .title{font-size:2em;}
+  .subtitle{font-size:1em;}
+  .grid,.galleryImg,.card{width:90%;flex-direction:column;}
 }
 
 /* ANIMATIONS */
-@keyframes fadeUp {
-  0% { opacity: 0; transform: translateY(40px); }
-  100% { opacity: 1; transform: translateY(0); }
+@keyframes fadeUp{
+ 0%{opacity:0;transform:translateY(40px);}
+100%{opacity:1;transform:translateY(0);}
 }
-
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+@keyframes fadeIn{
+ 0%{opacity:0;}100%{opacity:1;}
 }
