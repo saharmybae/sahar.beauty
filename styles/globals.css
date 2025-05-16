@@ -1,4 +1,4 @@
-/* styles/globals.css  – styles applicables à tout le site */
+/* styles/global.css – styles globaux */
 html {
   scroll-behavior: smooth;
 }
@@ -6,7 +6,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background-color: #000;
+  background: #000;
   color: #fff;
   font-family: 'Playfair Display', serif;
 }
