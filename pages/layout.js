@@ -1,6 +1,15 @@
-import '../styles/globals.css';      // ← styles globaux
-import '../styles/Home.module.css';  // ← styles locaux (CSS Module)
+// app/layout.js
+import '../styles/global.css';
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+export const metadata = {
+  title: 'Sahâr Beauty Lounge',
+  description: 'Luxe & élégance à Sousse – Onglerie haut de gamme',
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="fr">
+      <body>{children}</body>
+    </html>
+  );
 }
