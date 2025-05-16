@@ -1,8 +1,8 @@
-/* styles/Home.module.css – classes locales au composant */
+/* styles/Home.module.css – classes locales */
 
 .container { width: 100%; }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   position: relative;
   height: 100vh;
@@ -24,8 +24,8 @@
 
 .overlay { z-index: 1; padding: 0 20px; }
 
-.title   { font-size: 3.2em; animation: fadeUp 1s ease-out; }
-.subtitle{ font-size: 1.3em; color:#e2d3dd; animation: fadeUp 1.3s ease-out;}
+.title    { font-size: 3.2em; animation: fadeUp 1s ease-out; }
+.subtitle { font-size: 1.3em; color:#e2d3dd; animation: fadeUp 1.3s ease-out; }
 
 .button {
   margin-top: 20px;
@@ -76,7 +76,8 @@
 .form { display:flex; flex-direction:column; align-items:center; gap:15px; }
 .form input,.form textarea{
   width:90%; max-width:400px; padding:12px;
-  border:none; border-radius:8px; font-family:'Playfair Display',serif;
+  border:none; border-radius:8px;
+  font-family:'Playfair Display',serif;
 }
 .form button{
   padding:12px 30px; background:#e899b8; color:#fff;
@@ -100,9 +101,9 @@
 
 /* ANIMATIONS */
 @keyframes fadeUp{
- 0%{opacity:0;transform:translateY(40px);}
-100%{opacity:1;transform:translateY(0);}
+  0%{opacity:0;transform:translateY(40px);}
+  100%{opacity:1;transform:translateY(0);}
 }
 @keyframes fadeIn{
- 0%{opacity:0;}100%{opacity:1;}
+  0%{opacity:0;}100%{opacity:1;}
 }
